@@ -1,14 +1,161 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Styleguide - Eindopdracht NMD-I</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/pages.css">
+<style>
+    
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    margin-top:253px;
+    margin-left: 10%;
+
+}
+
+.products .grid-item {background-color: #7a70d7;
+height: 99%;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 10px;
+  padding: 10px 10px 10px 10px;
+
+}
+
+
+.gender .grid-container {
+  grid-template-columns: 40% 40%;
+  grid-gap: 20%;
+  margin-top: -5%;
+}
+.gender .grid-item {border: solid;
+padding-top: 15px;
+}
+  
+
+.price .grid-container {
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 0px;
+  margin-top: 8%;
+  
+}
+
+.price .grid-item {border: solid;
+text-align: center;
+padding: 33%;}
+
+.price .grid-item:hover {
+  background-color: #7a70d7;
+}
+
+
+
+
+
+
+.grid-item:after {
+  content: "";
+  display: block;
+}
+
+.grid-item > img {
+  width: 100%;
+}
+
+.products {
+    margin-left: 30%; 
+    margin-top: 250px;
+    width: 62%;
+}
+
+.header {
+  overflow: hidden;
+  background-color:white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid;
+  border-color: black;
+  height: 250px;
+  z-index: 99;
+ 
+}
+
+
+.products .grid-item:hover img {opacity: 0.3;
+transition: 0.5s;}
+
+</style>
+
 </head>
 <body>
-    <h1>Digital Styleguide</h1>
+
+ <div class="header">
+                <h2>My Header</h2>
+                
+</div>
+              
+
+<div class="sidenav">
+        <div class="grid-container">
+                <div class="grid-item"><img src="images/fitted.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/flexfit.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/tennis.jpg" alt=""></div>  
+                <div class="grid-item"><img src="images/muts.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/ponpon.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/pilot.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/fedora.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/trilby.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/bompa.jpg" alt=""></div>
+        </div>
+
+        <div class="gender">
+          <ul class="grid-container" style="list-style-type: none;">
+            <li class="grid-item"><img src="images/male.png" alt=""></li>
+            <li class="grid-item"><img src="images/female.png" alt=""></li>
+          </ul>
+          </div>
+        
+        <div class="price">
+          <ul class="grid-container" style="list-style-type: none;">
+            <li class="grid-item">€5</li>
+            <li class="grid-item">€10</li>
+            <li class="grid-item">€15</li>
+            <li class="grid-item">€20</li>
+            <li class="grid-item">€25</li>
+            <li class="grid-item">€30</li>
+            <li class="grid-item">€35</li>
+            <li class="grid-item">€40</li>
+            <li class="grid-item">€45</li>
+            <li class="grid-item">€50</li>
+            
+          </ul>
+          </div>
+        
+</div>
+              
+
+<div class="products">
+<ul class="grid-container" style="list-style-type: none;">
+  <li class="grid-item"><img src="images/img1.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img2.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img3.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img4.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img5.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img6.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img7.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img8.jpg" alt=""><div class="overlay"></div></li>
+  <li class="grid-item"><img src="images/img9.jpg" alt=""><div class="overlay"></div></li>
+  
+</ul>
+</div>
+
+
 </body>
 </html>
